@@ -1,6 +1,6 @@
 class Item_do_pedido:
 
-    def _init_(self, quantidade, preco_unitario, Pedido, produto):
+    def __init__(self, quantidade, preco_unitario, Pedido, produto):
 
        self.quantidade= quantidade
        self.preco_unitario= preco_unitario
