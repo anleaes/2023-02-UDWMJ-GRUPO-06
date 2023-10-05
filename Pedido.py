@@ -4,4 +4,3 @@ class Pedido:
         self.preco_total = preco_total
         self.status = status
 
-#teste

@@ -6,4 +6,3 @@ class Produto:
         self.data_fabricacao = data_fabricacao
         self.e_ativo = e_ativo
         
-#teste

@@ -4,4 +4,3 @@ class RedeSocial:
        self.nome = nome  
        self.descricao = descricao
 
-#teste

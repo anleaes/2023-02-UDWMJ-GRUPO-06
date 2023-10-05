@@ -5,4 +5,3 @@ class ItemPedido:
        self.preco_unitario = preco_unitario
        self.Pedido = Pedido
        self.produto = produto
-#teste
