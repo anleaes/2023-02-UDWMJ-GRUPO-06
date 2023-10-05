@@ -7,3 +7,9 @@ class Cliente:
        self.celular = celular
        self.email = email
        self.genero = genero
+
+    def validar_email(self, email):
+        if self.email == email:
+            print ("Email é igual")
+        else:
+            print("E-mail nao é igual")
