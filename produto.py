@@ -8,7 +8,7 @@ class Produto:
 
     def verifica_disponibilidade(self):
         if self.e_ativo == True:
-            print("Tem o produto")
+            print("Temos esse produto em estoque.")
         else:
-            print("Nao tem")
+            print("Produto em falta no estoque.")
 

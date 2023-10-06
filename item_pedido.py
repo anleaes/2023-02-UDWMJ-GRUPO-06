@@ -8,3 +8,4 @@ class ItemPedido:
 
     def mostra_qual_o_produto_e_o_preço(self):
         print("O item selecionado foi %s ele custará %i:{self.produto}: {self.preco_unitario}")
+        

@@ -5,5 +5,5 @@ class Pedido:
         self.status = status
 
     def mostra_preço_do_pedido(self):
-        print("O seu pedido vai custa %i:{self.preco_total}")
+        print("O seu pedido vai custar R$ %i:{self.preco_total}")
         

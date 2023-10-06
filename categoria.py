@@ -5,4 +5,4 @@ class Categoria:
         self.descricao = descricao
 
     def imprime_informacoes_categorias(self):
-        print("A categoria é %s e a descricao é %s.")
+        print("A categoria do produto é %s e a descricao é %s.{self.nome}: {self.descricao}")

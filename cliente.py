@@ -10,6 +10,6 @@ class Cliente:
 
     def validar_email(self, email):
         if self.email == email:
-            print ("Email é igual")
+            print ("Email já cadastrado anteriormente.")
         else:
-            print("E-mail nao é igual")
+            print("Email disponivel para cadastro.")
