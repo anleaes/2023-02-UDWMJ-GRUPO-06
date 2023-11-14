@@ -1,4 +1,12 @@
-teste2.txt
-documentos.docx
-/teste_git/teste1.txt
-/teste_git/teste2/*
+db.sqlite3
+/__pycache__/*
+/categories/__pycache__/*
+/categories/migrations/*
+/products/__pycache__/*
+/products/migrations/*
+/socialnetworks/__pycache__/*
+/socialnetworks/migrations/*
+/clients/__pycache__/*
+/clients/migrations/*
+/orders/__pycache__/*
+/orders/migrations/*
