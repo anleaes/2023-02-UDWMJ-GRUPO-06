@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import ProductForm
 from .models import Product
+
 # Create your views here.
+
 def add_product(request):
     template_name = 'products/add_product.html'
     context = {}

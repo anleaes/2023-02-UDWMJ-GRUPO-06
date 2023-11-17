@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import CategoryForm
 from .models import Category
+
 # Create your views here.
+
 def add_category(request):
     template_name = 'categories/add_category.html'
     context = {}

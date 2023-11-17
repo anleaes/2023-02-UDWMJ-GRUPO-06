@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect
+
 from .forms import SocialnetworkForm
 from .models import Socialnetwork
 # Create your views here.
+
 def add_socialnetwork(request):
     template_name = 'socialnetworks/add_socialnetwork.html'
     context = {}
