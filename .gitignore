@@ -10,3 +10,14 @@ db.sqlite3
 /apps/clients/migrations/*
 /apps/orders/__pycache__/*
 /apps/orders/migrations/*
+
+/apps/accounts/__pycache__/*
+/apps/accounts/migrations/*
+/apps/core/__pycache__/*
+/apps/core/migrations/*
+/apps/core/products/__pycache__/*
+/apps/core/products/migrations/*
+/apps/core/orders/__pycache__/*
+/apps/core/orders/migrations/*
+/apps/core/socialnetworks/migrations/*
+/apps/core/socialnetworks/__pycache__/*
