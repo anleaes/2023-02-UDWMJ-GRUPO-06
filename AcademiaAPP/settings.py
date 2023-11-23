@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'widget_tweaks',
     'core.apps.CoreConfig',
     'accounts.apps.AccountsConfig',
+    'ficha.apps.FichaConfig',
 ]
 
 MIDDLEWARE = [

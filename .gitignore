@@ -1,7 +1,7 @@
 db.sqlite3
 /academiaapp/__pycache__/*
-/apps/categories/__pycache__/*
-/apps/categories/migrations/*
+/apps/ficha/__pycache__/*
+/apps/ficha/migrations/*
 /apps/products/__pycache__/*
 /apps/products/migrations/*
 /apps/socialnetworks/__pycache__/*
