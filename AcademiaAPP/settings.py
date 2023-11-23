@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'django-widget-tweaks',
+    'widget_tweaks',
     'core.apps.CoreConfig',
     'accounts.apps.AccountsConfig',
 ]
@@ -57,7 +57,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'academiaapp.urls'
+ROOT_URLCONF = 'AcademiaAPP.urls'
 
 TEMPLATES = [
     {
