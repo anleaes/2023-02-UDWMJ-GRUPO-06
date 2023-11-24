@@ -4,8 +4,8 @@ db.sqlite3
 /apps/ficha/migrations/*
 /apps/products/__pycache__/*
 /apps/products/migrations/*
-/apps/socialnetworks/__pycache__/*
-/apps/socialnetworks/migrations/*
+/apps/palimentar/__pycache__/*
+/apps/palimentar/migrations/*
 /apps/clients/__pycache__/*
 /apps/clients/migrations/*
 /apps/orders/__pycache__/*
@@ -19,5 +19,5 @@ db.sqlite3
 /apps/core/products/migrations/*
 /apps/core/orders/__pycache__/*
 /apps/core/orders/migrations/*
-/apps/core/socialnetworks/migrations/*
-/apps/core/socialnetworks/__pycache__/*
+/apps/core/palimentar/migrations/*
+/apps/core/palimentar/__pycache__/*
