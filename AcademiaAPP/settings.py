@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'core.apps.CoreConfig',
     'accounts.apps.AccountsConfig',
     'ficha.apps.FichaConfig',
+    'palimentar.apps.PalimentarConfig',
 ]
 
 MIDDLEWARE = [
