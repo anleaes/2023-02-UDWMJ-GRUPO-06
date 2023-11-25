@@ -2,8 +2,8 @@ db.sqlite3
 /academiaapp/__pycache__/*
 /apps/ficha/__pycache__/*
 /apps/ficha/migrations/*
-/apps/products/__pycache__/*
-/apps/products/migrations/*
+/apps/treino/__pycache__/*
+/apps/treino/migrations/*
 /apps/palimentar/__pycache__/*
 /apps/palimentar/migrations/*
 /apps/clients/__pycache__/*
@@ -15,8 +15,8 @@ db.sqlite3
 /apps/accounts/migrations/*
 /apps/core/__pycache__/*
 /apps/core/migrations/*
-/apps/core/products/__pycache__/*
-/apps/core/products/migrations/*
+/apps/core/treino/__pycache__/*
+/apps/core/treino/migrations/*
 /apps/core/orders/__pycache__/*
 /apps/core/orders/migrations/*
 /apps/core/palimentar/migrations/*
