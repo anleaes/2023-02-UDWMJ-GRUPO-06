@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Lista de Treino - {{ block.super }}
+
+{% endblock title %}
+
+{% block body %}
+
+    <div class="container">
+        <br />
+        <h5><b>Lista de Treinos</b></h5>
+        <div class="row">
+            <div class ="col-md-12">
+                <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Descricao</th>
+                    <th scope="col">Data de criação</th>
+                    <th scope="col">Ativo</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Foto</th>
+                    <th scope="col">Documento</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for treino in treino %}
+                        <tr>
+                            <th scope="row">{{ treino.id }}</th>
+                            <td>{{ treino.name }}</td>
+                            <td>{{ treino.description }}</td>
+                            <td>{{ treino.date_fabrication }}</td>
+                            <td>
+                                {% if treino.is_active == True %}
+                                    Ativo
+                                {% endif %}
+                                {% if treino.is_active == False %}
+                                    Inativo
+                                {% endif %}
+                            </td>
+                            <td>{{ treino.category }}</td>
+                            <td>
+                                <img src="{{ treino.photo.url }}" width="50" height="50">
+                            </td>
+                            <td>
+                                <a href="{{ treino.doc.url }}" >{{ treino.doc.url }}</a>
+                            </td>
+                            <td>
+                                <a href="{% url 'treinos:edit_treino' treino.id %}" class="btn btn-primary btn-sm">Editar</a>
+                            </td>
+                            <td>    
+                                <a href="{% url 'treino:delete_treino' treino.id %}" class="btn btn-danger btn-sm ">Excluir</a>
+                            </td>
+                        </tr> 
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
+
+<br />
+    <a href="{% url 'treino:add_treino' %}">Cadastro de novo um novo treino</a>
+<br />
+<br />
