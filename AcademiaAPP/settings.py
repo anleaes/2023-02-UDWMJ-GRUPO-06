@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'ficha.apps.FichaConfig',
     'palimentar.apps.PalimentarConfig',
     'clients.apps.ClientsConfig',
+    'treino.apps.TreinoConfig',
+
 ]
 
 MIDDLEWARE = [
