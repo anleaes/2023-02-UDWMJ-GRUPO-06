@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'palimentar.apps.PalimentarConfig',
     'clients.apps.ClientsConfig',
     'treino.apps.TreinoConfig',
+    'profissional.apps.ProfissionalConfig',
 
 ]
 

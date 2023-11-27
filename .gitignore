@@ -23,3 +23,5 @@ db.sqlite3
 /apps/core/palimentar/__pycache__/*
 /apps/clients/__pycache__/*
 /apps/clients/migrations/*
+/apps/profissional/__pycache__/*
+/apps/profissional/migrations/*
