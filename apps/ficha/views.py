@@ -43,4 +43,4 @@ def delete_ficha(request, id_ficha):
     ficha = Ficha.objects.get(id=id_ficha)
     #fichas
     ficha.delete()
-    return redirect('categories:list_categories')
+    return redirect('ficha:list_ficha')
