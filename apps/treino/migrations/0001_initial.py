@@ -9,7 +9,7 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('ficha', '0001_initial'),
+        ('ficha', '__first__'),
     ]
 
     operations = [
