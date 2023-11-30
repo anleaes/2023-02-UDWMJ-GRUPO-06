@@ -50,7 +50,7 @@ INSTALLED_APPS = [
     'clients.apps.ClientsConfig',
     'treino.apps.TreinoConfig',
     'profissional.apps.ProfissionalConfig',
-
+    
 ]
 
 MIDDLEWARE = [

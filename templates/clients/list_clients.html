@@ -44,7 +44,7 @@
                             <td>{{ client.email }}</td>
                             <td>{{ client.gender }}</td>
                             <td>
-                                {% for client_palimentar in client_palimentar %}
+                                {% for client_palimentar in client_palimentars %}
                                     {% if client_palimentar.client_id == client.id %}
                                         <li>{{ client_palimentar.palimentar }}</li>
                                     {% endif %}
