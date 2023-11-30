@@ -2,9 +2,9 @@ from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import ProfissionalForm
 from .models import Profissional, Palimentar, ProfissionalPalimentar
-
+from django.contrib.auth.decorators import login_required
 # Create your views here.
-
+@login_required(login_url='/contas/login/')
 def add_profissional(request):
     template_name = 'profissional/add_profissional.html'
     context = {}
@@ -19,6 +19,7 @@ def add_profissional(request):
     context['form'] = form
     return render(request, template_name, context)
 
+@login_required(login_url='/contas/login/')
 def list_profissional(request):
     template_name = 'profissional/list_profissional.html'
     profissional_palimentar = ProfissionalPalimentar.objects.filter()
@@ -31,6 +32,7 @@ def list_profissional(request):
     }
     return render(request, template_name, context)
 
+@login_required(login_url='/contas/login/')
 def edit_profissional(request, id_profissional):
     template_name = 'profissional/add_profissional.html'
     context ={}
@@ -44,6 +46,7 @@ def edit_profissional(request, id_profissional):
     context['form'] = form
     return render(request, template_name, context)
 
+@login_required(login_url='/contas/login/')
 def delete_profissional(request, id_profissional):
     profissional = Profissional.objects.get(id=id_profissional)
     profissional.delete()
