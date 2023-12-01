@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block title %}
+
+    Lista de Alimentos - {{ block.super }}
+
+{% endblock title %}
+
+{% block body %}
+
+    <div class="container">
+        <br />
+        <h5><b>Lista de Alimentos</b></h5>
+        <div class="row">
+            <div class ="col-md-12">
+            <br />
+            
+                <table class="table table-hover">
+                <thead>
+                    <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Cliente</th>
+                    <th scope="col">Preco Total</th>
+                    <th scope="col">Itens de pedido</th>
+                    <th scope="col"></th>
+                    <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for alimento in alimento %}
+                        <tr>
+                            <th scope="row">
+                                {% if alimento.status == 'Finalizado' or alimento.status == 'Cancelado' %}
+                                    <p style="color:darkgray;" >{{ alimento.id }}</p>
+                                {% else %}
+                                    {{ alimento.id }}
+                                {% endif %}
+                            </th>
+                            <td>
+                                {% if alimento.status == 'Finalizado' or alimento.status == 'Cancelado' %}
+                                    <p style="color:darkgray;" >{{ alimento.status }}</p>
+                                {% else %}
+                                    {{ alimento.status }}
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% for client in clients %}
+                                    {% if alimento.client_id == client.id %}
+                                        {% if alimento.status == 'Finalizado' or alimento.status == 'Cancelado' %}
+                                            <p style="color:darkgray;" >{{ client.first_name }} {{ client.last_name }}</p>
+                                        {% else %}
+                                            {{ client.first_name }} {{ client.last_name }}
+                                        {% endif %}
+                                    {% endif %}
+                                {% endfor %}   
+                            </td>
+                            <td>
+                                {% if alimento.status == 'Finalizado' or alimento.status == 'Cancelado' %}
+                                    <p style="color:darkgray;" >R$ {{ alimento.total_price }}</p>
+                                {% else %}
+                                    R$ {{ alimento.total_price }}
+                                {% endif %}
+                            </td>
+                            <td>
+                                {% if alimento.status == 'Finalizado' or alimento.status == 'Cancelado' %}
+                                    <a href="#" class="btn btn-primary btn-sm disabled">Adicionar itens</a>
+                                {% else %}
+                                    <a href="{% url 'alimento:add_alimento_item' alimento.id %}" class="btn btn-primary btn-sm">Adicionar itens</a>
+                                {% endif %}
+                                <br /><br />
+                                {% for alimento_item in alimento_items %}
+                                    {% if alimento_item.alimento_id == alimento.id %}
+                                        Produto: {{ alimento_item.palimentar}}<br /> 
+                                        Quantidade: {{ alimento_item.quantity}}<br />
+                                        Valor Unitario: R$ {{ alimento_item.unitary_price }}<br />
+                                        <a href="{% url 'alimento:delete_alimento_item' alimento_item.id %}">Excluir Item</a><br /><br />
+                                    {% endif %}
+                                {% endfor %}
+                            </td>
+                            <td>
+                                <a href="{% url 'alimento:edit_alimento_status' alimento.id %}" class="btn btn-danger btn-sm ">Alterar Status</a>
+                            </td>
+                            <td>
+                                <a href="{% url 'alimento:delete_alimento' alimento.id %}" class="btn btn-danger btn-sm ">Excluir</a>
+                            </td>
+                        </tr> 
+                    {% endfor %}
+                </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock body %}
