@@ -28,6 +28,7 @@ urlpatterns = [
     path('profissional/', include('profissional.urls', namespace='profissional')),
     path('contas/', include('accounts.urls', namespace='accounts')),
     path('alimento/', include('alimento.urls', namespace='alimento')),
+    path('exercicio/', include('exercicio.urls', namespace='exercicio')),
 
 ]
 

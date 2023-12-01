@@ -42,3 +42,7 @@ db.sqlite3
 
 /apps/alimento/__pycache__/*
 /apps/alimento/migrations/*
+
+/apps/exercicio/__pycache__/*
+/apps/exercicio/migrations/*
+
