@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'treino.apps.TreinoConfig',
     'profissional.apps.ProfissionalConfig',
     'alimento.apps.AlimentoConfig',
-    
+    'exercicio.apps.ExercicioConfig',
 ]
 
 MIDDLEWARE = [
