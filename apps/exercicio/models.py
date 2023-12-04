@@ -35,8 +35,8 @@ class ExercicioItem(models.Model):
     treino = models.ForeignKey(Treino, on_delete=models.CASCADE)
 
     class Meta:
-        verbose_name = 'Item de pedido'
-        verbose_name_plural = 'Itens de pedido'
+        verbose_name = 'Item de Exercicio'
+        verbose_name_plural = 'Itens de Exercicio'
         ordering =['id']
 
     def __str__(self):
