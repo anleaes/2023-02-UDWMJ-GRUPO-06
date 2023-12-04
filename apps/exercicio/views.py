@@ -5,8 +5,8 @@ from .models import Exercicio , ExercicioItem, Treino, Profissional
 
 # Create your views here.
 
-def add_order(request, id_client):
-    template_name = 'exercicio/add_order.html'
+def add_exercicio(request, id_client):
+    template_name = 'exercicio/add_exercicio.html'
     context = {}
     if request.method == 'POST':
         form = ExercicioForm(request.POST)
