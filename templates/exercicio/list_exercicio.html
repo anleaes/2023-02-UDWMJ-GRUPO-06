@@ -70,7 +70,7 @@
                                 <br /><br />
                                 {% for exercicio_item in exercicio_items %}
                                     {% if exercicio_item.exercicio_id == exercicio.id %}
-                                        Produto: {{ exercicio_item.product}}<br /> 
+                                        Produto: {{ exercicio_item.treino}}<br /> 
                                         Quantidade: {{ exercicio_item.quantity}}<br />
                                         Valor Unitario: R$ {{ exercicio_item.unitary_price }}<br />
                                         <a href="{% url 'exercicio:delete_exercicio_item' exercicio_item.id %}">Excluir Item</a><br /><br />

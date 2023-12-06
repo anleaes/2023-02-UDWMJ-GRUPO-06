@@ -1,6 +1,6 @@
 from django.db import models
 from django.db import models
-from palimentar.models import Palimentar
+from treino.models import Treino
 
 # Create your models here.
 class Profissional(models.Model):
@@ -17,7 +17,7 @@ class Profissional(models.Model):
         ('O', 'Outro'),
     )
     gender = models.CharField('Genero', max_length=1, choices=GENDER_CHOICES)
-    profissional_palimentar = models.ManyToManyField(Palimentar, through='ProfissionalPalimentar', blank=True)
+    profissional_treino = models.ManyToManyField(Treino, through='ProfissionalTreino', blank=True)
     
     class Meta:
         verbose_name = 'Profissional'
@@ -27,11 +27,11 @@ class Profissional(models.Model):
     def __str__(self):
         return self.first_name
     
-class ProfissionalPalimentar(models.Model):
+class ProfissionalTreino(models.Model):
     created_on = models.DateTimeField(auto_now_add=True)
     updated_on = models.DateTimeField(auto_now=True)
     Profissional = models.ForeignKey(Profissional, on_delete=models.CASCADE)
-    palimentar = models.ForeignKey(Palimentar, on_delete=models.CASCADE)
+    treino = models.ForeignKey(Treino, on_delete=models.CASCADE)
 
     class Meta:
         verbose_name = 'Item de Plano alimentar'
@@ -39,4 +39,4 @@ class ProfissionalPalimentar(models.Model):
         ordering =['id']
 
     def __str__(self):
-        return self.palimentar.name
+        return self.treino.name
