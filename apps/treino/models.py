@@ -10,12 +10,11 @@ class Treino(models.Model):
     date_fabrication = models.DateField('Data Fabricacao', auto_now=False, auto_now_add=False) 
     is_active = models.BooleanField('Ativo', default=False)
     photo = models.ImageField('Foto', upload_to='photos')
-    doc = models.FileField('Documentos', upload_to='docs')
-    category = models.ForeignKey(Ficha, on_delete=models.CASCADE)
+    ficha = models.ForeignKey(Ficha, on_delete=models.CASCADE)
     
     class Meta:
-        verbose_name = 'Treino'
-        verbose_name_plural = 'Treino'
+        verbose_name = 'treino'
+        verbose_name_plural = 'treino'
         ordering =['id']
 
     def __str__(self):

@@ -34,13 +34,17 @@
                     {{ form.is_active }}
                 </div>
                 <div class="form-group">
-                    <label for="{{ form.category.id_for_label }}">Categoria</label>
-                    {{ form.category|add_class:"form-control" }}
+                    <label for="{{ form.ficha.id_for_label }}">Fichas</label>
+                    {{ form.ficha|add_class:"form-control" }}
                 </div>
                 <div class="form-group">
+                    <label for="{{ form.photo.id_for_label }}">Foto</label>
+                    {{ form.photo|add_class:"form-control-file" }}
+                </div>
+           <!--    <div class="form-group">
                     <label for="{{ form.doc.id_for_label }}">Documentos</label>
                     {{ form.doc|add_class:"form-control-file" }}
-                </div>
+                </div>--> 
                     <button type="submit" class="btn btn-primary">Salvar</button>       
                 </form>
             </div>
