@@ -19,17 +19,17 @@ db.sqlite3
 /apps/accounts/__pycache__/*
 /apps/accounts/migrations/*
 
-/apps/core/__pycache__/*
-/apps/core/migrations/*
+/apps/__pycache__/*
+/apps/migrations/*
 
-/apps/core/treino/__pycache__/*
-/apps/core/treino/migrations/*
+/apps/treino/__pycache__/*
+/apps/treino/migrations/*
 
-/apps/core/orders/__pycache__/*
-/apps/core/orders/migrations/*
+/apps/orders/__pycache__/*
+/apps/orders/migrations/*
 
-/apps/core/palimentar/migrations/*
-/apps/core/palimentar/__pycache__/*
+/apps/palimentar/migrations/*
+/apps/palimentar/__pycache__/*
 
 /apps/clients/__pycache__/*
 /apps/clients/migrations/*
