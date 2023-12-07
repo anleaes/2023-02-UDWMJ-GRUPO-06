@@ -28,8 +28,8 @@ db.sqlite3
 /apps/orders/__pycache__/*
 /apps/orders/migrations/*
 
-/apps/palimentar/migrations/*
 /apps/palimentar/__pycache__/*
+/apps/palimentar/migrations/*
 
 /apps/clients/__pycache__/*
 /apps/clients/migrations/*
@@ -37,8 +37,8 @@ db.sqlite3
 /apps/profissional/__pycache__/*
 /apps/profissional/migrations/*
 
-/apps/exercicio/__pycache__/*
-/apps/exercicio/migrations/*
+/apps/afisica/__pycache__/*
+/apps/afisica/migrations/*
 
 /apps/alimento/__pycache__/*
 /apps/alimento/migrations/*
@@ -46,3 +46,5 @@ db.sqlite3
 /apps/exercicio/__pycache__/*
 /apps/exercicio/migrations/*
 
+/apps/core/__pycache__/*
+/apps/core/migrations/*

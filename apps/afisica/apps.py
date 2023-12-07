@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 
-class ExercicioConfig(AppConfig):
+class AfisicaConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'exercicio'
-    verbose_name = 'Exercicio'
+    name = 'afisica'
+    verbose_name = 'Atividade Fisica'
