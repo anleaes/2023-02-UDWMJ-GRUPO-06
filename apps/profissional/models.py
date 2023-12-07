@@ -17,7 +17,7 @@ class Profissional(models.Model):
         ('O', 'Outro'),
     )
     gender = models.CharField('Genero', max_length=1, choices=GENDER_CHOICES)
-    profissional_palimentar = models.ManyToManyField(Palimentar, through='ProfissionalPalimentar', blank=True)
+    ##profissional_palimentar = models.ManyToManyField(Palimentar, through='ProfissionalPalimentar', blank=True)
     
     class Meta:
         verbose_name = 'Profissional'
