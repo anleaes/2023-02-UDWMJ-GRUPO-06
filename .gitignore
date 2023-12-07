@@ -48,3 +48,10 @@ db.sqlite3
 
 /apps/core/__pycache__/*
 /apps/core/migrations/*
+
+
+
+*.log
+*.pot
+*.pyc
+__pycache__
