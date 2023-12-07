@@ -9,7 +9,6 @@ class Palimentar(models.Model):
     date_fabrication = models.DateField('Data Fabricacao', auto_now=False, auto_now_add=False) 
     is_active = models.BooleanField('Ativo', default=False)
     photo = models.ImageField('Foto', upload_to='photos')
-    doc = models.FileField('Documentos', upload_to='docs')
     ficha = models.ForeignKey(Ficha, on_delete=models.CASCADE)
     
     class Meta:

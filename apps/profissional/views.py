@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import ProfissionalForm
-from .models import Profissional, Treino, ProfissionalTreino
+from .models import Profissional, Palimentar, ProfissionalPalimentar
 from django.contrib.auth.decorators import login_required
 # Create your views here.
 @login_required(login_url='/contas/login/')
@@ -22,13 +22,13 @@ def add_profissional(request):
 @login_required(login_url='/contas/login/')
 def list_profissional(request):
     template_name = 'profissional/list_profissional.html'
-    profissional_treino = ProfissionalTreino.objects.filter()
-    treino = Treino.objects.filter()
+    profissional_palimentar = ProfissionalPalimentar.objects.filter()
+    palimentar = Palimentar.objects.filter()
     profissional = Profissional.objects.filter()
     context = {
         'profissional': profissional,
-        'treino': treino,
-        'profissional_treino': profissional_treino
+        'palimentar': palimentar,
+        'profissional_palimentar': profissional_palimentar
     }
     return render(request, template_name, context)
 

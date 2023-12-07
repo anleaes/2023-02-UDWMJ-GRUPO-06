@@ -44,9 +44,9 @@
                             <td>{{ profissional.email }}</td>
                             <td>{{ profissional.gender }}</td>
                             <td>
-                                {% for profissional_treino in profissional_treino %}
-                                    {% if profissional_treino.profissional_id == profissional.id %}
-                                        <li>{{ profissional_treino.treino }}</li>
+                                {% for profissional_palimentar in profissional_palimentar %}
+                                    {% if profissional_palimentar.profissional_id == profissional.id %}
+                                        <li>{{ profissional_palimentar.palimentar }}</li>
                                     {% endif %}
                                 {% endfor %}
                             </td>
