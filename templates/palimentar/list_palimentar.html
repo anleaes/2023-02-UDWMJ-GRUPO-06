@@ -26,8 +26,6 @@
                     <th scope="col">Data de fabricação</th>
                     <th scope="col">Status</th>
                     <th scope="col">Categoria</th>
-                    <!--<th scope="col">Foto</th>-->
-                  <!--<th scope="col">Documento</th> -->
                     <th scope="col"></th>
                     <th scope="col"></th>
                     </tr>
@@ -51,9 +49,6 @@
                             <td>
                                 <img src="{{ palimentar.photo.url }}" width="50" height="50">
                             </td>
-                           <!-- <td>
-                                <a href="{{ palimentar.doc.url }}" >{{ palimentar.doc.url }}</a>
-                            </td>-->
                             <td>
                                 <a href="{% url 'palimentar:edit_palimentar' palimentar.id %}" class="btn btn-primary btn-sm">Editar</a>
                             </td>
