@@ -27,7 +27,9 @@
                     <th scope="col">Telefone</th>
                     <th scope="col">E-mail</th>
                     <th scope="col">Genero</th>
+                    <!--
                     <th scope="col">Plano alimentar</th>
+                    -->
                     <th scope="col"></th>
                     <th scope="col"></th>
                     <th scope="col"></th>
@@ -56,9 +58,11 @@
                             <td>
                                 <a href="{% url 'profissional:delete_profissional' profissional.id %}" class="btn btn-danger btn-sm ">Excluir</a>
                             </td>
+                            <!--
                             <td>   
                                  <a href="{% url 'exercicio:add_exercicio' profissional.id %}" class="btn btn-danger btn-sm ">Pedir</a>
                             </td>
+                            -->
                         </tr> 
                     {% endfor %}
                 </tbody>
